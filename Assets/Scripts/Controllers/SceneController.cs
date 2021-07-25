@@ -21,7 +21,7 @@ class SceneController : MonoBehaviour
     public void Start()
     {
         //First scene
-        sceneText.text = "The year is 9AD, 36 years ago, The Roman Republic, one of the strongest and most influential nations in all of history had collapsed. In its place, an empire had been forged, turning the republic into the \"Roman Empire\".";
+        sceneText.text = "First scene text goes here";
         menuController = GameObject.Find("MenuController").GetComponent<MenuController>();
     }
 
@@ -43,54 +43,37 @@ class SceneController : MonoBehaviour
         //Go to the next section/panel based on position
         //Use scene section int in an if/switch to progress
 
+        /*
+         * Notes:
+         * Change image: GameObject.Find("ScenePanel").GetComponent<Image>().sprite = images[#];
+         * Start game: menuController.GameplayStart();
+         * Disable scenes: menuController.ScenePanel.SetActive(false);
+         * Reenable scenes: menuController.ScenePanel.SetActive(true);
+         * Reset application: gameOver = true;
+         */
+        
         if(gameOver != true)
         {
-            sceneSection++;
-            if (sceneSection == 1)
+            switch (sceneSection)
             {
-                sceneText.text = "This was not the end of disasters for the Roman people however, as many disasters loomed on the horiozon. This tale begins in a Roman Province, only in name, Germania.";
-            }
-            else if (sceneSection == 2)
-            {
-                //Play scene one
-                sceneText.text = "Winter was approaching in this new \"Province\", and as per Roman Tradition, Varus had ordered his people to begin slowly retreating accross the rhine into more friendly territory.";
-            }
-            else if (sceneSection == 3)
-            {
-                sceneText.text = "A young German advisor, Arminius however told Varus of a German revolt in the north that could be easily defeated if he marched immediately.";
-                GameObject.Find("ScenePanel").GetComponent<Image>().sprite = images[1];
-            }
-            else if (sceneSection == 4)
-            {
-                sceneText.text = "Chiefs of some German tribes had warned Varus that Arminus was lying, however Varus didnt believe them and prepared to march anyway.";
-            }
-            else if (sceneSection == 5)
-            {
-                sceneText.text = "With that, Varus had began the march to the north, through the underdevloped and thin roads through Teutoburg forest.";
-                GameObject.Find("ScenePanel").GetComponent<Image>().sprite = images[2];
-            }
-            else if (sceneSection == 6)
-            {
-                sceneText.text = "This would prove to be a fatal mistake that would cause ripples throughout the empire for decades and eternal hatred to all \"barbaric\" people.";
-            }
-            else if (sceneSection == 7)
-            {
-                //Start the game here
-                sceneText.text = "";
-                menuController.GameplayStart();
-            }
-            else if (sceneSection == 8)
-            {
-                //Game over scenes go here
-                menuController.ScenePanel.SetActive(true);
-                GameObject.Find("ScenePanel").GetComponent<Image>().sprite = images[3];
-                sceneText.text = "Bodies lie, litering the forest floor, thousands dead, there is no escape from these forests, Germans lie hidden amongst the trees, ready to slaughter anyone in sight.";
-                
-                gameOver = true;
-            }
-            else
-            {
-                sceneText.text = "[Text Failure] \n Scene section: " + sceneSection + "\n Scenes section does not exist.";
+                case 1:
+                    sceneText.text = "Initial scene goes here";
+                    break;
+                case 2:
+                    sceneText.text = "Scene text goes here";
+                    break;
+                case 3:
+                    sceneText.text = "Scene text goes here";
+                    break;
+                case 4:
+                    sceneText.text = "Scene text goes here";
+                    break;
+                case 5:
+                    sceneText.text = "Scene text goes here";
+                    break;
+                default:
+                    sceneText.text = "[Text Failure] \n Scene section: " + sceneSection + "\n Scenes section does not exist.";
+                    break;
             }
         }
         else
