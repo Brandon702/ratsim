@@ -862,7 +862,7 @@ MonoBehaviour:
   sceneSection: 0
   sceneText: {fileID: 0}
   images: []
-  once: 1
+  once: 0
 --- !u!1 &1486901514
 GameObject:
   m_ObjectHideFlags: 0
