@@ -26,28 +26,17 @@ public class MenuController : MonoBehaviour
     public AudioMixer mixer;
     public AudioController audioController;
     private SceneController sceneController;
+    public GameObject timer;
     private int playing;
 
     private void Start()
     {
-        gameObject.SetActive(true);
-        gameObjects.Add(MainMenuPanel);
-        gameObjects.Add(OptionsPanel);
-        gameObjects.Add(CreditsPanel);
-        gameObjects.Add(PausePanel);
-        gameObjects.Add(InstructionsPanel);
-        gameObjects.Add(GamePanel);
-        gameObjects.Add(ScenePanel);
-        gameObjects.Add(InteractionPanel);
-        sceneController = GameObject.Find("SceneController").GetComponent<SceneController>();
-        Disable();
-        MainMenuPanel.SetActive(true);
-        Time.timeScale = 0;
-        GameController.Instance.state = eState.TITLE;
     }
 
     private void OnEnable()
     {
+        Time.timeScale = 1;
+        GameController.Instance.state = eState.TITLE;
         menuTrackPlayer();
     }
 
@@ -149,24 +138,25 @@ public class MenuController : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
     public void StartGame()
     {
-        Disable();
-        ScenePanel.SetActive(true);
-        GameController.Instance.state = eState.MENU;
-        sceneController.once = true;
+        GameController.Instance.state = eState.GAME;
+        timer.SetActive(true);
+        SceneManager.LoadScene("Game");
         sceneTrackPlayer();
+        Time.timeScale = 1;
         Debug.Log("Start Game");
     }
 
-    public void GameplayStart()
-    {
-        Disable();
-        gameTrackPlayer();
-        Time.timeScale = 1;
-        GameController.Instance.state = eState.GAME;
-        GamePanel.SetActive(true);
-    }
+    //public void GameplayStart()
+    //{
+    //    Disable();
+    //    gameTrackPlayer();
+    //    Time.timeScale = 1;
+    //    GameController.Instance.state = eState.GAME;
+    //    GamePanel.SetActive(true);
+    //}
 
     public void ResumeGame()
     {

@@ -359,7 +359,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &560729055
 Transform:
   m_ObjectHideFlags: 0
@@ -397,6 +397,7 @@ MonoBehaviour:
   gameController: {fileID: 572496139}
   mixer: {fileID: 24100000, guid: e6bce7ae49442e24f97181cfd59bab32, type: 2}
   audioController: {fileID: 1486901516}
+  timer: {fileID: 1410527456}
 --- !u!1 &572496137
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,6 +960,12 @@ PrefabInstance:
 --- !u!4 &1410527455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7675711925959242082, guid: e703978c9f527874cb286f192eef4801,
+    type: 3}
+  m_PrefabInstance: {fileID: 1410527454}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1410527456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675711926467120919, guid: e703978c9f527874cb286f192eef4801,
     type: 3}
   m_PrefabInstance: {fileID: 1410527454}
   m_PrefabAsset: {fileID: 0}
