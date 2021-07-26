@@ -60,7 +60,7 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        sceneController = GameObject.Find("SceneController").GetComponent<SceneController>();
+        //sceneController = GameObject.Find("SceneController").GetComponent<SceneController>();
     }
 
     void Update()
