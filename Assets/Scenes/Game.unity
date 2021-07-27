@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6041989, g: 0.60475945, b: 0.60436827, a: 1}
+  m_IndirectSpecularColor: {r: 0.6041989, g: 0.60475945, b: 0.6043683, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -143,7 +143,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -5937570523071360599, guid: b4e384ce78f252a419ef8f283ab1396a, type: 3}
 --- !u!1 &38093121
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,13 +267,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168437726}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: -7.6, y: 65.6, z: -27.5}
   m_LocalScale: {x: 16.839, y: 10, z: 12.018}
   m_Children: []
   m_Father: {fileID: 505255426}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!64 &168437728
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -634,7 +634,7 @@ Transform:
   - {fileID: 168437727}
   - {fileID: 599916905}
   m_Father: {fileID: 1908210072}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &541096545
 GameObject:
@@ -1865,13 +1865,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1437284115}
-  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: -8.5, y: 14.409907, z: 31.1}
   m_LocalScale: {x: 10.304963, y: 10, z: 18.38874}
   m_Children: []
   m_Father: {fileID: 505255426}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: -90}
 --- !u!64 &1437284117
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2141,7 +2141,7 @@ Transform:
   - {fileID: 2062692285}
   - {fileID: 705507995}
   m_Father: {fileID: 1908210072}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1577749884 stripped
 Transform:
@@ -2485,9 +2485,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 691068654}
   - {fileID: 505255426}
   - {fileID: 1556155387}
+  - {fileID: 691068654}
   m_Father: {fileID: 2018389346}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
