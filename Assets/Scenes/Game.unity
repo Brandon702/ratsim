@@ -897,8 +897,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
-  m_Intensity: 1.98
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Intensity: 4.83
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
@@ -1180,7 +1180,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737640601}
   m_LocalRotation: {x: 0.7509829, y: 0.09033782, z: 0.18714228, w: 0.62677085}
-  m_LocalPosition: {x: -48.3, y: 77.3, z: -19.7}
+  m_LocalPosition: {x: -48.3, y: 48.1, z: -16.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1556155387}
@@ -1243,7 +1243,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 4.89458e-17, z: 4.5904e-41, w: -25.931503}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: -25.875}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1288,7 +1288,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765046229}
   m_LocalRotation: {x: 0.77127415, y: 0.021079073, z: -0.3690974, w: 0.5181302}
-  m_LocalPosition: {x: 51, y: 82.700005, z: -18.9}
+  m_LocalPosition: {x: 51, y: 53.5, z: -15.799999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1556155387}
@@ -1351,7 +1351,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 4.89458e-17, z: 4.5904e-41, w: -25.931503}
+  m_BoundingSphereOverride: {x: 0, y: 1e-45, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1663,8 +1663,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8273ab021b497c4bbe85adff20f5d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 1577749886}
-  gameController: {fileID: 572496139}
+  timerText: {fileID: 0}
+  gameController: {fileID: 0}
 --- !u!1 &1413505581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,14 +1851,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5d2d8f846e3c44fbd03c5e132d2571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds:
-  - name: Music
-    clip: {fileID: 8300000, guid: d89a0edcd8aabf84fa163b4d853de60d, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-    audioType: 1
+  sounds: [{name: Music, clip: {fileID: 8300000, guid: d89a0edcd8aabf84fa163b4d853de60d,
+        type: 3}, volume: 1, pitch: 1, loop: 1, source: {fileID: 0}, audioType: 1}]
   mixer: {fileID: 24100000, guid: e6bce7ae49442e24f97181cfd59bab32, type: 2}
 --- !u!1 &1540312043
 GameObject:
@@ -2002,18 +1996,6 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 1792415603108708583}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1577749886 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7675711925071667480, guid: e703978c9f527874cb286f192eef4801,
-    type: 3}
-  m_PrefabInstance: {fileID: 1410527454}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1664445333
 PrefabInstance:
   m_ObjectHideFlags: 0
