@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class MenuController : MonoBehaviour
 {
@@ -26,8 +27,9 @@ public class MenuController : MonoBehaviour
     public AudioMixer mixer;
     public AudioController audioController;
     private SceneController sceneController;
-    public GameObject timer;
+    public TMP_Text timer;
     private int playing;
+    private bool runOnce;
 
     private void Start()
     {
@@ -39,6 +41,15 @@ public class MenuController : MonoBehaviour
         GameController.Instance.state = eState.TITLE;
         menuTrackPlayer();
     }
+
+    //private void Update()
+    //{
+    //    if (GameController.Instance.state == eState.GAME && runOnce == true)
+    //    {
+    //        timer.text = "5:00";
+    //        runOnce = false;
+    //    }
+    //}
 
     private void menuTrackPlayer()
     {
@@ -128,6 +139,7 @@ public class MenuController : MonoBehaviour
         sceneTrackPlayer();
         Time.timeScale = 1;
         Debug.Log("Start Game");
+        
     }
 
     //public void GameplayStart()
