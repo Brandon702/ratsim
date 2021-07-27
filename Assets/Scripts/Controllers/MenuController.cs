@@ -41,15 +41,15 @@ public class MenuController : MonoBehaviour
         GameController.Instance.state = eState.TITLE;
     }
 
-    private void Update()
-    {
-        if (GameController.Instance.state == eState.GAME && runOnce == true)
-        {
-            //timer.text = "5:00";
-            //runOnce = false;
-            gameTrackPlayer();
-        }
-    }
+    //private void Update()
+    //{
+    //    if (GameController.Instance.state == eState.GAME && runOnce == true)
+    //    {
+    //        //timer.text = "5:00";
+    //        //runOnce = false;
+    //        gameTrackPlayer();
+    //    }
+    //}
 
     private void gameTrackPlayer()
     {
@@ -70,7 +70,6 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene("Game");
         Time.timeScale = 1;
         Debug.Log("Start Game");
-        
     }
 
     //public void GameplayStart()

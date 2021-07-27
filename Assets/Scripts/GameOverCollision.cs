@@ -10,12 +10,11 @@ public class GameOverCollision : MonoBehaviour
     {
         menuController = GameObject.Find("MenuController").GetComponent<MenuController>();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
         interaction = true;
         if (collision.gameObject.tag == "Player")
         {
-            Destroy(collision.gameObject);
             SceneManager.LoadScene("Win");
         }
         Debug.Log("Game Over");

@@ -28,7 +28,7 @@ public class Timer : MonoBehaviour
         }
 
         //if(timerText.text == "0:10:11")
-        if(timer >= 300.0f)
+        if(timer >= 20.0f)
         {
             SceneManager.LoadScene("Lose");
         }
