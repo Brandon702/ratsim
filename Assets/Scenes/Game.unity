@@ -1890,9 +1890,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7675711925071667480, guid: e703978c9f527874cb286f192eef4801,
         type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 74f35961af4b3ca438c4086a3c310ccb,
+        type: 2}
+    - target: {fileID: 7675711925071667480, guid: e703978c9f527874cb286f192eef4801,
+        type: 3}
       propertyPath: m_fontSizeBase
       value: 140
       objectReference: {fileID: 0}
+    - target: {fileID: 7675711925071667480, guid: e703978c9f527874cb286f192eef4801,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3642830184489458754, guid: 74f35961af4b3ca438c4086a3c310ccb,
+        type: 2}
     - target: {fileID: 7675711925071667482, guid: e703978c9f527874cb286f192eef4801,
         type: 3}
       propertyPath: m_Name
@@ -2885,6 +2897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2040798464}
   - component: {fileID: 2040798463}
+  - component: {fileID: 2040798465}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -3003,6 +3016,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!164 &2040798465
+AudioReverbFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040798462}
+  m_Enabled: 1
+  m_DryLevel: 0
+  m_Room: -1000
+  m_RoomHF: -300
+  m_DecayTime: 2.31
+  m_DecayHFRatio: 0.64
+  m_ReflectionsLevel: -711
+  m_ReverbLevel: 83
+  m_ReverbDelay: 0.017
+  m_Diffusion: 100
+  m_Density: 100
+  m_HFReference: 5000
+  m_RoomLF: 0
+  m_LFReference: 250
+  m_ReflectionsDelay: 0
+  m_ReverbPreset: 6
 --- !u!1 &2101851525
 GameObject:
   m_ObjectHideFlags: 0
@@ -3164,6 +3200,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VR
+      objectReference: {fileID: 0}
+    - target: {fileID: 1792415604735585597, guid: 7744586de40d04c4a8b2998d3a88bcc8,
+        type: 3}
+      propertyPath: Acceleration
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7744586de40d04c4a8b2998d3a88bcc8, type: 3}
