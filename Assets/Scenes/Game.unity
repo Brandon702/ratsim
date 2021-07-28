@@ -1915,6 +1915,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 700
       objectReference: {fileID: 0}
+    - target: {fileID: 7675711925431944079, guid: e703978c9f527874cb286f192eef4801,
+        type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7675711925959242077, guid: e703978c9f527874cb286f192eef4801,
         type: 3}
       propertyPath: m_Name
